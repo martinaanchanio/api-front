@@ -2,7 +2,7 @@ fetch('https://ponyapi.net/v1/character/all')
 .then (response => response.json())
 .then (data => {
     console.log(data)
-    personajes = data.results
+    personajes = data.data
     mostrarPersonajes(personajes)
 })
 .catch (error=> {
@@ -16,6 +16,7 @@ const searchInput = document.getElementById('searchInput')
 
 function mostrarPersonajes(listaPersonajes) {
     mainContainer.innerHTML = ''
+
 
     listaPersonajes.forEach (personaje => {
         mainContainer.innerHTML += `
@@ -31,7 +32,7 @@ function mostrarPersonajes(listaPersonajes) {
 }
 
 searchInput.addEventListener('input', () => {
-    const busqueda = searchInput.ariaValueMax.toLowerCase()
+    const busqueda = searchInput.value.toLowerCase()
     const personajesFiltrados = personajes.filter( personaje => {
         return personaje.name.toLowerCase().includes(busqueda)
     })
