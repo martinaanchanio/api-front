@@ -39,3 +39,25 @@ searchInput.addEventListener('input', () => {
     mostrarPersonajes(personajesFiltrados)
 })
 
+const filtrarTipo=document.getElementById("filtrosTipo")
+const filtrarGenero= document.getElementById ("filtrosGenero")
+const busqueda = document.getElementById("busqueda")
+
+function filtrar() {
+  let ponysFiltrados = personajes.filter(personaje => {
+    console.log( personaje.kind.includes(filtrarTipo.value))
+    //console.log( personaje.sex.includes(filtrarGenero.value))
+    //console.log( personaje.kind.includes(filtrarTipo.value) && personaje.sex.includes(filtrarGenero.value))
+    //console.log(" ----- ")
+    return personaje.kind.includes(filtrarTipo.value)
+    && personaje.sex.includes(filtrarGenero.value)
+    
+  })
+
+  console.log(ponysFiltrados)
+  mostrarPersonajes(ponysFiltrados)
+
+}
+
+filtrarTipo.addEventListener("change", filtrar)
+filtrarGenero.addEventListener("change", filtrar)
