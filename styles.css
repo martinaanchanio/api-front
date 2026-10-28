@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-body{background-color: pink;}
+body{background-color: #CDB7F6;}
 
 .ponyContainer {
 width: 100%;
@@ -20,12 +20,58 @@ width: 25rem;
 height: 20rem;
 margin: 0.5rem;
 padding: 1rem;
-
+background-color:#FFF9F0;
+border: 1rem solid double gold;
+border-color: gold;
+border-radius: 1rem;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
-    min-height: 6rem;
-    max-height: 6rem;
-    min-width: 6rem;
-    max-width: 6rem;
+    min-height: 8rem;
+    max-height: 8rem;
+    min-width: 8rem;
+    max-width: 8rem;
+    border: 0.2rem solid double gold;
 }
+
+h1 {   
+    font-weight: bold;
+    color: #382c57;
+}
+
+h2 {
+    font-weight: 200;
+    font-style: italic;
+    color: #615288;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: medium;
+    color: #443754;
+    margin-top: 0.25rem;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: medium;
+    color: #7c6b91;
+    margin-top: 1.25rem;
+}
+
+.busqueda {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #FFB6D9;
+    font-style: oblique;
+    width: 50rem;
+    height: 2rem;
+    border: 0.2rem solid #FFB6D9;
+    border-radius: 1rem;
+    display: flex;
+    padding: 1rem;
+
+}
+
+
