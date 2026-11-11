@@ -26,7 +26,7 @@ function mostrarPersonajes(listaPersonajes) {
             <img src="${personaje.image}" alt="${personaje.name}">
             <h3>Género: ${personaje.sex}</h3>
             <h3>Tipo: ${personaje.kind}</h3>
-            <h4>Conocé más sobre ${personaje.name} en: ${personaje.url}</h4>
+            <h4>Conocé más sobre ${personaje.name} en: <a href="${personaje.url}">${personaje.name} </a></h4>
         </div>
         `})
 }
