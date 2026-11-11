@@ -4,7 +4,19 @@
     padding: 0px;
 }
 
-body{background-color: #CDB7F6;}
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+body{
+    background-image: url("./imagenes/FONDO\ MPL.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .ponyContainer {
 width: 100%;
@@ -17,14 +29,21 @@ gap: 1rem;
 
 .card {
 width: 25rem;
-height: 20rem;
+height: 22rem;
 margin: 0.5rem;
-padding: 1rem;
-background-color:#FFF9F0;
-border: 1rem solid double gold;
-border-color: gold;
-border-radius: 1rem;
-font-family: Arial, Helvetica, sans-serif;
+background-image: url("./imagenes/FONDO\ POSTTA.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+display: flex;
+flex-direction: column;
+border: 0.3rem solid gold;
+border-style: double;
+font-family: "Pacifico", cursive;
+font-weight: 400;
+font-style: normal;
+align-items: center;
 }
 
 img {
@@ -32,18 +51,22 @@ img {
     max-height: 8rem;
     min-width: 8rem;
     max-width: 8rem;
-    border: 0.2rem solid double gold;
+    border: 0.2rem solid gold;
+    border-style: double;
+    margin: 0.5rem;
 }
 
 h1 {   
     font-weight: bold;
     color: #382c57;
+    margin-bottom: 0rem;
 }
 
 h2 {
     font-weight: 200;
     font-style: italic;
     color: #615288;
+    margin-top: 0.1rem;
 }
 
 h3 {
@@ -51,27 +74,37 @@ h3 {
     font-size: medium;
     color: #443754;
     margin-top: 0.25rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h4 {
     font-weight: 600;
     font-size: medium;
     color: #7c6b91;
-    margin-top: 1.25rem;
+    margin-top: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .busqueda {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    color: #FFB6D9;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    color: gold;
     font-style: oblique;
-    width: 50rem;
+    width: 80rem;
     height: 2rem;
-    border: 0.2rem solid #FFB6D9;
-    border-radius: 1rem;
+    border: 0.2rem solid gold;
+    border-style: double;
     display: flex;
     padding: 1rem;
 
+}
+
+.filtros {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: palevioletred;
+    border: 0.01rem solid palevioletred;
+    margin: 0.05rem;
 }
 
 

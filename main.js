@@ -17,18 +17,18 @@ const searchInput = document.getElementById('searchInput')
 function mostrarPersonajes(listaPersonajes) {
     mainContainer.innerHTML = ''
 
-
-    listaPersonajes.forEach (personaje => {
+    listaPersonajes.forEach(personaje => {
         mainContainer.innerHTML += `
         <div class="card">
             <h1>${personaje.name}</h1>
-            <h2>${personaje.alias}</h2>
+            ${personaje.alias ? `<h2>${personaje.alias}</h2>` : ''}
             <img src="${personaje.image}" alt="${personaje.name}">
             <h3>Género: ${personaje.sex}</h3>
             <h3>Tipo: ${personaje.kind}</h3>
-            <h4>Conocé más sobre ${personaje.name} en: <a href="${personaje.url}">${personaje.name} </a></h4>
+            <h4>Conocé más sobre ${personaje.name} en: <a href="${personaje.url}">${personaje.name}</a></h4>
         </div>
-        `})
+        `
+    })
 }
 
 searchInput.addEventListener('input', () => {
